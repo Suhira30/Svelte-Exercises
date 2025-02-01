@@ -41,7 +41,7 @@ Use Svelte’s reactivity to update UI. -->
             {#each $tasks as task,index}
                 <div class="flex justify-between items-start">
                     <span class="w-[280px] break-words mb-8 ">{task}</span>
-                    <button onclick={removeTask(index)} class="bg-red-500 w-20 border-2 mt-5 rounded-xl">Remove</button>
+                    <button onclick={()=>removeTask(index)} class="bg-red-500 w-20 border-2 mt-5 rounded-xl">Remove</button>
                 </div>
             {/each}
             </div>

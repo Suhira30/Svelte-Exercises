@@ -7,6 +7,8 @@ Buttons to increase, decrease, and reset. -->
 
 <script>
     import TodoList from "../routes/todolist/+page.svelte"
+    import WeatherApp from "../routes/weather_app/+page.svelte"
+
     let count=$state(0)
     function increment(){
         count+=1
@@ -42,5 +44,9 @@ Buttons to increase, decrease, and reset. -->
 </div>
 <div class="h-screen">
     <TodoList/>
+</div>
+
+<div class="h-screen">
+    <WeatherApp/>
 </div>
 </main>
